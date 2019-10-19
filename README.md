@@ -14,5 +14,8 @@ cmake --build .
 ./test/geometry
 ./test/element
 ./test/mesh
-./test/reader
+./test/vtk
+mkdir result
+./demo/euler/tube sod tube.vtk 0.0 0.5 500 5
+./demo/euler/box  sod  box.vtk 0.0 1.0 800 5
 ```
